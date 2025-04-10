@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+
+<title>Edit Equipo</title>
+
+{% block body %}
+    <h1>Edit Equipo</h1>
+
+    {{ include('equipo/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('app_equipo_index') }}">back to list</a>
+
+    {{ include('equipo/_delete_form.html.twig') }}
+{% endblock %}
